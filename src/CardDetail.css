@@ -1,0 +1,161 @@
+.container {
+    display: flex;
+}
+
+.container > .imageContainer {
+    display: grid;
+    width: 60%;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 960px) {
+    .container > .imageContainer { /* slide yapılacak, geçici olarak bu şekilde koydum */
+        width: 100%;
+        grid-template-columns: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+} 
+
+.container > aside {
+    width: 40%;
+    float: right;
+    text-align: center;
+    margin-left: 64px;
+}
+
+.asideContainer { /* width sanki responsive değil bakılacak buraya */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+}
+
+.asideContainer > .shoeName {
+    font-size: 28px;
+    font-weight: 500;
+    color: #111111;
+    font-style: normal;
+    line-height: 34px;
+    text-align: left;
+}
+
+.asideContainer > .shoeGender {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111111;
+    font-style: normal;
+    line-height: 24px;
+    text-align: left;
+}
+
+.asideContainer > .shoePrice {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111111;
+    font-style: normal;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.shoeSize {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.shoeNumberHeaders {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chooseSize,
+.sizeGuide {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111111;
+    font-style: normal;
+    line-height: 24px;
+    float: left;
+    cursor: pointer;
+}
+
+.sizeGuide {
+    color: #757575;
+}
+
+.allShoeSizesContainer {
+    width: 100%;
+    height: 300px;
+}
+
+.allShoeSizes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    margin-top: 8px;
+}
+
+.allShoeSizes > button { /* box-sizing: inherit hover yaparken titremeyi önlüyor */
+    border: 1px solid #c7c7c7;
+    background-color: white;
+    box-sizing: inherit;
+    border-radius: 8px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.allShoeSizes > button:hover,
+.allShoeSizes > button:focus {
+    border: 1px solid black;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 160px;
+    justify-content: space-around;
+}
+
+.buttons input {
+    height: 63px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 24px;
+    line-height: 24px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.addToBasket {
+    color: white;
+    background-color: #111111;
+}
+
+.addToBasket:hover {
+    opacity: 0.5;
+} 
+
+.addToFavourite {
+    color: #111111;
+}
+
+.addToFavourite:hover {
+    border: 1px solid black;
+}

@@ -1,0 +1,62 @@
+.basketItemContainer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 100px;
+}
+
+.basketItemContainer > img {
+    width: 150px;
+    height: 150px;
+    margin-right: 32px;
+}
+
+.itemDescription > * {
+    margin-bottom: 8px;
+}
+
+.itemDescription {
+    width: 70%;
+}
+
+.itemSizeContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.itemSizeContainer > * {
+    margin-right: 32px;
+}
+
+.itemNamePrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemName {
+    font-weight: 500;
+} 
+
+.sub-total,
+.total {
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.btn-container {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.btn-container > button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-container > button:hover {
+    opacity: 0.6;
+}
+

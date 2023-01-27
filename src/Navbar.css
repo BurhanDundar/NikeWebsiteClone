@@ -1,0 +1,74 @@
+.Wrapper {
+    display: flex;
+    height:96px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    width: 64px;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.Wrapper > ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    transition: all ease 200ms;
+}
+
+li:hover{
+    transform: rotateZ(18deg) scale(1.5);
+    cursor: pointer;
+}
+
+.basket-section {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.basket-section > a {
+    position: relative;
+    padding: 8px;
+    display: grid;
+    place-content: center;
+}
+
+.basket-section > a:hover { /* hover yapınca butonlar oynuyor. Nasıl giderilir o sorun ona bak */
+    position: relative;
+    background-color: #DDDDDD;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+a > span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    right: 0;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .Wrapper > ul {
+        display: none;
+    }
+
+    .Wrapper {
+        justify-content: space-between;
+    }
+  }
